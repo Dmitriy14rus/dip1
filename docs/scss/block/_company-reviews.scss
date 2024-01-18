@@ -1,0 +1,608 @@
+.company-reviews {
+    background: #F4F4F4;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 130px;
+
+    &__mask {
+        background: #F9BB88;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 463px;
+        height: 731px;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        padding-top: 110px;
+    }
+
+
+    &__heading-title {
+        position: relative;
+        font-size: 36px;
+        @extend %bold;
+    }
+
+    &__heading-title::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -1;
+        top: 58px;
+        right: 247px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__btn-prev,
+    &__btn-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    &__btn-prev:hover path,
+    &__btn-next:hover path {
+        stroke: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+
+
+    &__stick {
+        height: 34px;
+        width: 1.8px;
+        background-color: $dark;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    &__card {
+        border: 2px solid #F4F4F4;
+        width: 902px;
+        text-align: center;
+        background: #FFF;
+        margin: 0px auto;
+        display: flex;
+        position: relative;
+    }
+
+    &__card::before {}
+
+    &__info {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 221px;
+    }
+
+    &__title {
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+        padding-top: 20px;
+        padding-bottom: 6px;
+    }
+
+    &__text {
+        @extend %regular;
+        padding-bottom: 15px;
+    }
+
+    &__text span {
+        padding-left: 7px;
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+    }
+
+    &__btn {
+        padding-bottom: 56px;
+    }
+
+    &__btn button {
+        width: 191px;
+        height: 50px;
+        border-radius: 2px;
+        background: $orange-btn;
+        color: $white2;
+    }
+
+    &__btn button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.company-reviews__swiper-pagination .swiper-pagination-bullet {
+    margin-right: 18px;
+    width: 9px;
+    height: 9px;
+    background: $orange-bg;
+    border-radius: 0%;
+    opacity: inherit;
+}
+
+.company-reviews__swiper-pagination .swiper-pagination-bullet-active {
+    position: relative;
+    bottom: 0px;
+    width: 17px;
+    height: 17px;
+    background: $dark;
+}
+
+.company-reviews {
+
+    &__card-img {
+        padding-left: 60px;
+        padding-top: 80px;
+        padding-bottom: 145px;
+    }
+
+    &__card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 40px;
+        padding-top: 80px;
+        padding-right: 146px;
+    }
+
+    &__card-title {
+        font-size: 18px;
+        line-height: 140%;
+        @extend %bold;
+        padding-bottom: 6px;
+    }
+
+    &__card-span {
+        font-size: 15px;
+        color: rgba(32, 32, 32, 0.40);
+        line-height: 160%;
+        margin-bottom: 15px;
+    }
+
+    &__card-text {
+        line-height: 170%;
+        margin-bottom: 20px;
+    }
+
+    &__card-link {
+        letter-spacing: 0.7px;
+        line-height: 170%;
+        @extend %bold;
+    }
+}
+
+.company-reviews__nav {
+    z-index: 6;
+    position: absolute;
+    right: 264px;
+    top: 302px;
+}
+
+.company-reviews__swiper-pagination1 {
+    position: absolute;
+    bottom: 40px;
+    left: 397px;
+    z-index: 6;
+}
+
+.company-reviews::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #F9BB88;
+    z-index: -8;
+}
+
+.company-reviews::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/group224.svg);
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 221px;
+    bottom: 48px;
+    left: 118px;
+    z-index: -1;
+}
+
+
+
+
+@media (max-width: 1440px) {
+    .company-reviews {
+
+        &__mask {
+            height: auto;
+        }
+
+        &__heading {}
+
+        &__heading-title {
+            font-size: 32px;
+        }
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {}
+
+        &__card-info {}
+
+        &__card-title {}
+
+        &__card-span {}
+
+        &__card-text {}
+
+        &__card-link {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}
+
+
+@media (max-width: 992px) {
+    .company-reviews {
+
+        &__mask {
+            width: 300px;
+        }
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {
+            width: 100%;
+        }
+
+        &__card-img {}
+
+        &__card-info {}
+
+        &__card-title {}
+
+        &__card-span {}
+
+        &__card-text {}
+
+        &__card-link {}
+
+        &__nav {
+            right: 68px;
+        }
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}
+
+@media (max-width: 768px) {
+    .company-reviews {
+
+        &__mask {
+            width: 196px;
+            height: 806px;
+        }
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {
+            flex-direction: column;
+        }
+
+        &__card-img {
+            padding-left: 40px;
+            padding-top: 36px;
+            padding-bottom: 0px;
+            width: 158px;
+            height: auto;
+        }
+
+        &__card-info {
+            padding-right: 27px;
+            padding-top: 35px;
+            padding-bottom: 32px;
+        }
+
+        &__card-title {}
+
+        &__card-span {}
+
+        &__card-text {}
+
+        &__card-link {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper-pagination1 {
+            left: 286px;
+        }
+
+        &__swiper-pagination {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}
+
+
+@media (max-width: 576px) {
+    .company-reviews {
+
+        &__mask {
+            display: none;
+        }
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {}
+
+        &__card-info {
+            padding-bottom: 68px;
+        }
+
+        &__card-title {}
+
+        &__card-span {}
+
+        &__card-text {}
+
+        &__card-link {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper-pagination1 {
+            left: 66px;
+        }
+
+        &__swiper-pagination {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+    .company-reviews__nav {
+        display: none;
+    }
+
+    .company-reviews__swiper-pagination1 {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .company-reviews__swiper-pagination {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .company-reviews {
+
+        &__mask {}
+
+        &__heading {}
+
+        &__heading-title {
+            
+        }
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {}
+
+        &__card-info {}
+
+        &__card-title {}
+
+        &__card-span {}
+
+        &__card-text {}
+
+        &__card-link {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}
+
+@media (max-width: 400px) {
+    .company-reviews {
+
+        &__mask {}
+
+        &__heading {}
+
+        &__heading-title {
+            width: 284px;
+        }
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {}
+
+        &__card-info {}
+
+        &__card-title {}
+
+        &__card-span {}
+
+        &__card-text {}
+
+        &__card-link {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}

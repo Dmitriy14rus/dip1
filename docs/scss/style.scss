@@ -1,0 +1,54 @@
+// Базовые стили============================
+@import "base/reset"; //обнуление стилей
+@import "base/vars"; // переменные и шаблоны
+@import "base/bases"; //базовые стили
+// =========================================
+
+
+// Страницы=================================
+@import "pages/company"; //О компании
+@import "pages/catalog"; //Каталог
+
+@import "pages/blog"; //Блог
+
+// ==========================================
+
+
+// Блоки=====================================
+// Домашняя страница=========================
+@import "block/header"; //Хэдер
+@import "block/advantages"; //Преимущества
+@import "block/typesStairs"; //Типы лестниц свайпер
+@import "block/form"; //Блок ввода Имя Телефон Почта
+@import "block/appeal"; //Почему стоит обратиться к нам
+@import "block/examples"; //Слайдер примеры работ
+@import "block/advantagesStairs"; //Преимущества монолитных лестниц
+@import "block/working"; //Как мы работаем
+@import "block/location"; //Локация
+@import "block/footer"; //Футтер
+
+@import "block/modal"; //Модалка расчета стоймости лестницы
+@import "block/modal5"; //Модалка расчета стоймости лестницы
+
+// О компании=================================
+@import "block/company-header"; // Блок хэдэр
+@import "block/company"; // Блок о компании
+@import "block/company-advantages"; // Блок о компании
+@import "block/company-work"; // Блок Основные принципы в работе
+@import "block/company-form"; // Блок о получение 3D визуализации
+@import "block/company-typesStairs"; // Блок готовые проекты
+@import "block/company-reviews"; // Блок отзывы
+@import "block/company-location"; // Блок остались вопросы?
+// Каталог====================================
+@import "block/catalog";
+@import "block/catalog1";
+// Примеры работ=====================================
+@import "block/examplesOfWorks";
+// Контакты=====================================
+@import "block/contacts";
+
+
+
+
+
+

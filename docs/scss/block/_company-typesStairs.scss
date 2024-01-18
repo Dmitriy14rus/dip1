@@ -1,0 +1,372 @@
+.company-typesStairs {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+
+    &__heading-title {
+        position: relative;
+        font-size: 36px;
+        @extend %bold;
+    }
+
+    &__heading-title::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+        top: 21px;
+        right: 257px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__btn-prev,
+    &__btn-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    &__btn-prev:hover path,
+    &__btn-next:hover path {
+        stroke: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+
+
+    &__stick {
+        height: 34px;
+        width: 1.8px;
+        background-color: $dark;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    &__card {
+        border: 2px solid $white;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+    &__title {
+
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+        padding-top: 20px;
+        padding-bottom: 6px;
+    }
+
+    &__text {
+        @extend %regular;
+        padding-bottom: 15px;
+
+    }
+
+    &__text span {
+        padding-left: 7px;
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+    }
+
+    &__btn-box {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 110px;
+    }
+
+    &__btn {
+        margin: 0px auto;
+        width: 279px;
+        height: 50px;
+        border-radius: 2px;
+        background: #202020;
+        color: $white2;
+        @extend %medium;
+    }
+
+    &__btn-link {
+        color: $white2;
+        @extend %medium;
+    }
+
+
+
+    &__btn :hover {}
+}
+
+
+.company-typesStairs__swiper-pagination1 {
+    display: none;
+}
+
+
+.company-typesStairs__swiper-pagination .swiper-pagination-bullet {
+
+
+    margin-right: 18px;
+    width: 9px;
+    height: 9px;
+    background: $orange-bg;
+    border-radius: 0%;
+    opacity: inherit;
+}
+
+.company-typesStairs__swiper-pagination .swiper-pagination-bullet-active {
+    position: relative;
+    bottom: 0px;
+    width: 17px;
+    height: 17px;
+    background: $dark;
+}
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+    .company-typesStairs {
+
+        &__heading {}
+
+        &__heading-title {
+            font-size: 32px;
+        }
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {
+            width: 300px;
+        }
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+
+        &__btn-box {}
+
+        &__btn {}
+
+        &__btn-link {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+}
+
+
+@media (max-width: 992px) {
+    .company-typesStairs {
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {
+            width: 326px;
+        }
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+
+        &__btn-box {}
+
+        &__btn {}
+
+        &__btn-link {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+}
+
+@media (max-width: 768px) {
+    .company-typesStairs {
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {
+            width: 240px;
+        }
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+
+        &__btn-box {}
+
+        &__btn {}
+
+        &__btn-link {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}
+
+@media (max-width: 576px) {
+    .company-typesStairs__nav {
+        display: none;
+    }
+
+    .company-typesStairs__swiper-pagination1 {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .company-typesStairs__swiper-pagination {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+
+    }
+
+    .company-typesStairs {
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {}
+
+        &__card-img {
+            width: 100%;
+        }
+
+        &__swiper-pagination1 {}
+
+        &__swiper-pagination {}
+
+        &__btn-box {}
+
+        &__btn {}
+
+        &__btn-link {}
+    }
+
+    .container {}
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+
+}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 400px) {}

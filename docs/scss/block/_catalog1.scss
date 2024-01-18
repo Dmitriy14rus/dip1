@@ -1,0 +1,624 @@
+.catalog1 {
+    background: #F4F4F4;
+    z-index: 0;
+    position: relative;
+
+    &__title {
+        font-size: 36px;
+        line-height: 120%;
+        @extend %bold;
+        margin-bottom: 44px;
+    }
+
+    &__content {
+
+        padding: 50px 104px 35px 37px;
+        border: 2px solid #F4F4F4;
+        background: #FFF;
+        box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 67px;
+    }
+
+    &__content-left {}
+
+    &__img {}
+
+    &__line {
+        width: 320px;
+        height: 3px;
+        background: #F4F4F4;
+        margin-top: 59px;
+        margin-bottom: 57px;
+        margin-left: 100px;
+    }
+
+    &__detailed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // text-align: center;
+        width: 446px;
+        height: 220px;
+        background: $dark;
+        gap: 26px;
+        margin-left: 37px;
+    }
+
+    &__detailed-title {
+        height: 64px;
+        color: $white;
+        font-size: 23px;
+        line-height: 140%;
+        padding-left: 68px;
+        padding-right: 66px;
+    }
+
+    &__detailed-title-text {
+        @extend %semibold;
+        color: $white;
+        font-size: 23px;
+    }
+
+    &__btn {
+        padding-right: 118px;
+    }
+
+    &__detailed-btn {
+        width: 191px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+
+    &__detailed-btn:hover {
+        background: $orange-btn;
+        transition: all .2s ease-in-out;
+    }
+
+    &__content-right {}
+
+    &__content-right::before {}
+
+    &__top {}
+
+    &__top-title {
+        font-size: 23px;
+        @extend %semibold;
+        margin-bottom: 20px;
+    }
+
+    &__top-line {
+        width: 70px;
+        height: 3px;
+        background: #FF9646;
+        margin-bottom: 20px;
+    }
+
+    &__top-price {
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    &__top-price span {
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+        margin-left: 8px;
+        margin-right: 6px;
+    }
+
+    &__top-text {
+        color: rgba(32, 32, 32, 0.40);
+        line-height: 140%;
+        margin-bottom: 30px;
+        width: 416px;
+    }
+
+    &__top-deadlines {
+        margin-bottom: 30px;
+    }
+
+    &__top-deadlines span {
+        font-size: 18px;
+        @extend %semibold;
+        line-height: 140%;
+        margin-left: 16px;
+    }
+
+    &__top-btn {
+        width: 225px;
+        height: 50px;
+        border-radius: 2px;
+        background: #FF9646;
+        color: #FFF;
+        @extend %medium;
+        margin-bottom: 50px;
+    }
+    &__top-btn:hover{
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+    &__bottom {}
+
+    &__bottom-list {}
+
+    &__bottom-text {
+        line-height: 160%;
+        @extend %medium;
+        width: 491px;
+    }
+}
+
+.catalog1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 65%;
+    background-color: #F9BB88;
+    z-index: 0;
+}
+
+.catalog1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 653px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 37%;
+    background: #FFF;
+    z-index: -1;
+}
+
+.container {}
+
+.catalog {
+
+    &__mask {}
+
+    &__link {}
+}
+
+.company {
+
+    &__link-left {}
+
+    &__link-right {}
+}
+
+.typesStairs1 {
+    margin-bottom: 130px;
+}
+
+@media (max-width: 1440px) {
+    .catalog1 {
+
+        &__title {}
+
+        &__content {
+            gap: 30px;
+        }
+
+        &__content-left {}
+
+        &__img {
+            width: 400px;
+        }
+
+        &__line {
+            margin-left: 42px;
+        }
+
+        &__detailed {
+            margin: 0px;
+            width: 400px;
+        }
+
+        &__detailed-title {
+            padding-left: 45px;
+            padding-right: 0px;
+        }
+
+        &__detailed-title-text {}
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__content-right {}
+
+        &__content-right::before {}
+
+        &__top {}
+
+        &__top-title {}
+
+        &__top-line {}
+
+        &__top-price {}
+
+        &__top-price span {}
+
+        &__top-text {
+            width: 355px;
+        }
+
+        &__top-deadlines {}
+
+        &__top-deadlines span {}
+
+        &__top-btn {}
+
+        &__bottom {}
+
+        &__bottom-list {}
+
+        &__bottom-text {
+            width: 355px;
+        }
+    }
+
+    .catalog1::before {}
+
+    .catalog1::after {}
+
+
+
+    .catalog {
+
+        &__mask {}
+
+        &__link {}
+    }
+
+    .company {
+
+        &__link-left {}
+
+        &__link-right {}
+    }
+
+    .catalog1::after {
+        height: 44%;
+    }
+}
+
+@media (max-width: 992px) {
+    .catalog1 {
+
+        &__title {}
+
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 0px 35px 0px;
+        }
+
+        &__content-left {}
+
+        &__img {}
+
+        &__line {}
+
+        &__detailed {}
+
+        &__detailed-title {}
+
+        &__detailed-title-text {}
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__content-right {}
+
+        &__content-right::before {}
+
+        &__top {}
+
+        &__top-title {}
+
+        &__top-line {}
+
+        &__top-price {}
+
+        &__top-price span {}
+
+        &__top-text {}
+
+        &__top-deadlines {}
+
+        &__top-deadlines span {}
+
+        &__top-btn {}
+
+        &__bottom {}
+
+        &__bottom-list {}
+
+        &__bottom-text {}
+    }
+
+    .catalog1::before {}
+
+    .catalog1::after {}
+
+    .container {}
+
+    .catalog {
+
+        &__mask {}
+
+        &__link {}
+    }
+
+    .company {
+
+        &__link-left {}
+
+        &__link-right {}
+    }
+
+    .catalog1::after {
+        height: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog1 {
+        margin-bottom: 130px;
+
+        &__title {}
+
+        &__content {}
+
+        &__content-left {}
+
+        &__img {}
+
+        &__line {}
+
+        &__detailed {}
+
+        &__detailed-title {}
+
+        &__detailed-title-text {}
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__content-right {}
+
+        &__content-right::before {}
+
+        &__top {}
+
+        &__top-title {}
+
+        &__top-line {}
+
+        &__top-price {}
+
+        &__top-price span {}
+
+        &__top-text {}
+
+        &__top-deadlines {}
+
+        &__top-deadlines span {}
+
+        &__top-btn {}
+
+        &__bottom {}
+
+        &__bottom-list {}
+
+        &__bottom-text {}
+    }
+
+    .catalog1::before {}
+
+    .catalog1::after {}
+
+    .container {}
+
+    .catalog {
+
+        &__mask {}
+
+        &__link {}
+    }
+
+    .company {
+
+        &__link-left {}
+
+        &__link-right {}
+    }
+}
+
+@media (max-width: 576px) {
+    .catalog1 {
+
+        &__title {}
+
+        &__content {}
+
+        &__content-left {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__line {}
+
+        &__detailed {
+            width: 100%;
+        }
+
+        &__detailed-title {
+            font-size: 18px;
+        }
+
+        &__detailed-title-text {
+            font-size: 18px;
+        }
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__content-right {}
+
+        &__content-right::before {}
+
+        &__top {}
+
+        &__top-title {}
+
+        &__top-line {}
+
+        &__top-price {}
+
+        &__top-price span {}
+
+        &__top-text {
+            font-size: 12px;
+        }
+
+        &__top-deadlines {}
+
+        &__top-deadlines span {}
+
+        &__top-btn {}
+
+        &__bottom {}
+
+        &__bottom-list {}
+
+        &__bottom-text {
+            font-size: 12px;
+        }
+    }
+
+    .catalog1::before {
+        width: 10%;
+    }
+
+    .catalog1::after {}
+
+    .container {}
+
+    .catalog {
+
+        &__mask {}
+
+        &__link {}
+    }
+
+    .company {
+
+        &__link-left {}
+
+        &__link-right {}
+    }
+}
+
+@media (max-width: 400px) {
+    .catalog1 {
+
+        &__title {}
+
+        &__content {}
+
+        &__content-left {}
+
+        &__img {}
+
+        &__line {
+            margin-left: 0px;
+            width: 100%;
+        }
+
+        &__detailed {}
+
+        &__detailed-title {
+            padding-right: 30px;
+        }
+
+        &__detailed-title-text {}
+
+        &__btn {
+            padding-right: 0px;
+        }
+
+        &__detailed-btn {}
+
+        &__content-right {
+            width: 100%;
+        }
+
+        &__content-right::before {}
+
+        &__top {}
+
+        &__top-title {}
+
+        &__top-line {}
+
+        &__top-price {}
+
+        &__top-price span {}
+
+        &__top-text {
+            width: 100%;
+        }
+
+        &__top-deadlines {}
+
+        &__top-deadlines span {}
+
+        &__top-btn {}
+
+        &__bottom {}
+
+        &__bottom-list {}
+
+        &__bottom-text {
+            width: 100%;
+        }
+    }
+
+    .catalog1::before {}
+
+    .catalog1::after {}
+
+    .container {}
+
+    .catalog {
+
+        &__mask {}
+
+        &__link {}
+    }
+
+    .company {
+
+        &__link-left {}
+
+        &__link-right {}
+    }
+}

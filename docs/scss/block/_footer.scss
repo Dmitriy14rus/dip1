@@ -1,0 +1,371 @@
+.footer {
+    background-color: $white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__logo-top {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 15px;
+
+
+    }
+
+    &__logo-left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-right {
+        display: flex;
+        flex-direction: column;
+        width: 129px;
+        line-height: 1.40;
+        @extend %semibold;
+    }
+
+    &__title-logo {
+        letter-spacing: .27em;
+        text-transform: uppercase;
+        color: $orange-btn;
+        @extend %semibold;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 72px;
+        padding-top: 23px;
+
+    }
+
+    &__nav-list-right {}
+
+    &__nav-item {
+        padding-bottom: 10px;
+        transition: all .2s ease-in-out;
+    }
+    &__nav-item:hover {
+        color:   #F98C37;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__phone {
+        @extend %semibold;
+        font-size: 18px;
+    }
+
+    &__button {
+        background: $orange-btn;
+        width: 170px;
+        height: 40px;
+        border-radius: 2px;
+        color: $white
+    }
+
+    &__button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__copyright {
+        color: rgba(32, 32, 32, 0.40);
+    }
+
+    &__confidentiality {
+        padding-right: 55px;
+        color: rgba(32, 32, 32, 0.40);
+    }
+
+    &__socials {
+        display: flex;
+        gap: 52px;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .footer {
+
+        &__top {}
+
+        &__logo {}
+
+        &__logo-top {}
+
+        &__logo-left {}
+
+        &__logo-right {}
+
+        &__logo-bottom {}
+
+        &__title-logo {}
+
+        &__nav {}
+
+        &__nav-list-left {}
+
+        &__nav-item {}
+
+        &__nav-list-right {}
+
+        &__info {}
+
+        &__phone {}
+
+        &__button {}
+
+        &__bottom {}
+
+        &__copyright {}
+
+        &__confidentiality {}
+
+        &__socials {}
+
+        &__vkontakte {}
+
+        &__instagramm {}
+    }
+
+    .container {}
+
+    .confidentiality {}
+
+}
+
+@media (max-width: 992px) {
+    .footer {
+
+        &__top {
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__logo {}
+
+        &__logo-top {}
+
+        &__logo-left {}
+
+        &__logo-right {}
+
+        &__logo-bottom {}
+
+        &__title-logo {}
+
+        &__nav {
+            margin-left: 89px;
+        }
+
+        &__nav-list-left {}
+
+        &__nav-item {}
+
+        &__nav-list-right {}
+
+        &__info {}
+
+        &__phone {}
+
+        &__button {}
+
+        &__bottom {}
+
+        &__copyright {}
+
+        &__confidentiality {}
+
+        &__socials {}
+
+        &__vkontakte {}
+
+        &__instagramm {}
+    }
+
+    .container {}
+
+    .confidentiality {}
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+
+        &__top {
+            gap: 60px;
+        }
+
+        &__logo {}
+
+        &__logo-top {}
+
+        &__logo-left {}
+
+        &__logo-right {}
+
+        &__logo-bottom {}
+
+        &__title-logo {}
+
+        &__nav {
+            display: none;
+        }
+
+        &__nav-list-left {}
+
+        &__nav-item {}
+
+        &__nav-list-right {}
+
+        &__info {}
+
+        &__phone {}
+
+        &__button {}
+
+        &__bottom {}
+
+        &__copyright {}
+
+        &__confidentiality {}
+
+        &__socials {}
+
+        &__vkontakte {}
+
+        &__instagramm {}
+    }
+
+    .container {}
+
+    .confidentiality {}
+
+}
+
+@media (max-width: 576px) {
+    .footer {
+
+        &__top {
+            gap: 33px;
+        }
+
+        &__logo {}
+
+        &__logo-top {}
+
+        &__logo-left {}
+
+        &__logo-right {}
+
+        &__logo-bottom {}
+
+        &__title-logo {}
+
+        &__nav {}
+
+        &__nav-list-left {}
+
+        &__nav-item {}
+
+        &__nav-list-right {}
+
+        &__info {}
+
+        &__phone {}
+
+        &__button {}
+
+        &__bottom {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 18px;
+        }
+
+        &__copyright {}
+
+        &__confidentiality {
+            padding-right: 0px;
+        }
+
+        &__socials {}
+
+        &__vkontakte {}
+
+        &__instagramm {}
+    }
+
+    .container {}
+
+    .confidentiality {}
+
+}
+
+@media (max-width: 400px) {
+    .footer {
+
+        &__top {}
+
+        &__logo {}
+
+        &__logo-top {}
+
+        &__logo-left {}
+
+        &__logo-right {}
+
+        &__logo-bottom {}
+
+        &__title-logo {}
+
+        &__nav {}
+
+        &__nav-list-left {}
+
+        &__nav-item {}
+
+        &__nav-list-right {}
+
+        &__info {}
+
+        &__phone {}
+
+        &__button {}
+
+        &__bottom {}
+
+        &__copyright {}
+
+        &__confidentiality {}
+
+        &__socials {}
+
+        &__vkontakte {}
+
+        &__instagramm {}
+    }
+
+    .container {}
+
+    .confidentiality {}
+
+}

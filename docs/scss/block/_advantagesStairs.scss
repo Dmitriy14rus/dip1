@@ -1,0 +1,467 @@
+.advantagesStairs {
+    margin-top: 110px;
+    margin-bottom: 135px;
+
+    &__title {
+        position: relative;
+        font-size: 36px;
+        @extend %bold;
+        line-height: 120%;
+        max-width: 421px;
+        margin-bottom: 46px;
+    }
+
+    &__title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -39px;
+        width: 120px;
+        height: 18px;
+        background: #F9BB88;
+        z-index: -8
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box-left {
+        position: relative;
+    }
+
+    &__box-left::before {
+        content: "";
+        position: absolute;
+        background-image: url(../img/group222.svg);
+        width: 232px;
+        height: 220px;
+        position: absolute;
+        bottom: -15px;
+        left: 181px;
+    }
+
+
+
+    &__item1 {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 112px;
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-color: #F9BB88;
+        border: 2px solid #202020;
+        border-radius: 50%;
+        transition: border 0.2s ease;
+    }
+
+    &__item2 {
+        content: "";
+        position: absolute;
+        top: 89px;
+        left: 198px;
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-color: #F9BB88;
+        border: 2px solid #202020;
+        border-radius: 50%;
+        transition: border 0.2s ease;
+    }
+
+    &__item3 {
+        content: "";
+        position: absolute;
+        top: 152px;
+        left: 274px;
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-color: #F9BB88;
+        border: 2px solid #202020;
+        border-radius: 50%;
+        transition: border 0.2s ease;
+    }
+
+    &__item4 {
+        content: "";
+        position: absolute;
+        top: 216px;
+        left: 351px;
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-color: #F9BB88;
+        border: 2px solid #202020;
+        border-radius: 50%;
+        transition: border 0.2s ease;
+    }
+
+    &__item5 {
+        content: "";
+        position: absolute;
+        top: 278px;
+        left: 426px;
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-color: #F9BB88;
+        border: 2px solid #202020;
+        border-radius: 50%;
+        transition: border 0.2s ease;
+    }
+
+    &__item6 {
+        content: "";
+        position: absolute;
+        top: 342px;
+        left: 501px;
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-color: #F9BB88;
+        border: 2px solid #202020;
+        border-radius: 50%;
+        transition: border 0.2s ease;
+    }
+
+
+
+
+
+
+
+    &__list {
+        cursor: pointer;
+        margin-bottom: 37px;
+    }
+
+    &__list:last-child {
+
+        margin-bottom: 0px;
+    }
+
+    &__list-title {
+        font-size: 18px;
+        line-height: 140%;
+        @extend %semibold;
+        margin-bottom: 8px;
+    }
+
+    &__list-text {
+        line-height: 140%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .advantagesStairs {
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__box {
+            gap: 20px;
+
+        }
+
+        &__box-left {}
+
+        &__box-left::before {
+            bottom: -106px;
+            left: 155px;
+        }
+
+        &__item1 {
+            top: 20px;
+            left: 96px;
+        }
+
+        &__item2 {
+            top: 76px;
+            left: 171px;
+        }
+
+        &__item3 {
+            top: 131px;
+            left: 236px;
+        }
+
+        &__item4 {
+            top: 186px;
+            left: 304px;
+        }
+
+        &__item5 {
+            top: 241px;
+            left: 368px;
+        }
+
+        &__item6 {
+            top: 295px;
+            left: 433px;
+        }
+
+        &__img {
+            width: 480px;
+        }
+
+        &__box-right {}
+
+        &__list {
+            margin-bottom: 8px;
+        }
+
+        &__list-title {
+            font-size: 16px;
+            line-height: 120%;
+        }
+
+        &__list-text {
+            font-size: 12px;
+            line-height: 120%;
+        }
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .advantagesStairs {
+
+        &__title {}
+
+        &__box {}
+
+        &__box-left {}
+
+        &__box-left::before {
+            bottom: 151px;
+            left: 163px;
+        }
+
+        &__item1 {
+            top: 20px;
+            left: 95px;
+            width: 13px;
+            height: 13px;
+        }
+
+        &__item2 {
+            top: 76px;
+            left: 171px;
+            width: 13px;
+            height: 13px;
+        }
+
+        &__item3 {
+            top: 130px;
+            left: 236px;
+            width: 13px;
+            height: 13px;
+        }
+
+        &__item4 {
+            top: 186px;
+            left: 303px;
+            width: 13px;
+            height: 13px;
+        }
+
+        &__item5 {
+            top: 240px;
+            left: 368px;
+            width: 13px;
+            height: 13px;
+        }
+
+        &__item6 {
+            top: 295px;
+            left: 433px;
+            width: 13px;
+            height: 13px;
+        }
+
+        &__img {}
+
+        &__box-right {
+            margin-left: -21px;
+        }
+
+        &__list {
+            margin-bottom: 20px;
+        }
+
+        &__list-title {}
+
+        &__list-text {}
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .advantagesStairs {
+
+        &__title {}
+
+        &__box {
+            flex-direction: column;
+        }
+
+        &__box-left {}
+
+        &__box-left::before {
+            background-image: url(../img/group223.svg);
+            width: 336px;
+            height: 160px;
+            bottom: -41px;
+            left: 118px;
+        }
+
+        &__item1 {top: 22px;
+            left: 103px;}
+
+        &__item2 {top: 81px;
+            left: 182px;}
+
+        &__item3 {top: 139px;
+            left: 252px;}
+
+        &__item4 {top: 198px;
+            left: 323px;}
+
+        &__item5 {top: 256px;
+            left: 392px;}
+
+        &__item6 {top: 314px;
+            left: 461px;}
+
+        &__img {
+            width: 97%;
+        }
+
+        &__box-right {
+            margin-left: 10px;
+            z-index: 1;
+        }
+
+        &__list {}
+
+        &__list-title {}
+
+        &__list-text {}
+    }
+
+    .container {}
+
+}
+
+@media (max-width: 576px) {
+    .advantagesStairs {
+
+        &__title {
+            font-size: 29px;
+        }
+
+        &__box {}
+
+        &__box-left {}
+
+        &__box-left::before {
+            left: 76px;
+            bottom: -53px;
+        }
+
+        &__item1 {
+            display: none;
+        }
+
+        &__item2 {
+            display: none;
+        }
+
+        &__item3 {
+            display: none;
+        }
+
+        &__item4 {
+            display: none;
+        }
+
+        &__item5 {
+            display: none;
+        }
+
+        &__item6 {
+            display: none;
+        }
+
+        &__img {
+            width: 97%;
+            min-width: 430px;
+        }
+
+        &__box-right {}
+
+        &__list {}
+
+        &__list-title {
+            font-size: 18px;
+            line-height: 140%;
+        }
+
+        &__list-text {}
+    }
+
+    .container {}
+
+}
+
+@media (max-width: 400px) {
+    .advantagesStairs {
+
+        &__title {}
+
+        &__box {}
+
+        &__box-left {}
+
+        &__box-left::before {
+            left: 54px;
+    bottom: -62px;
+        }
+
+        &__item1 {}
+
+        &__item2 {}
+
+        &__item3 {}
+
+        &__item4 {}
+
+        &__item5 {}
+
+        &__item6 {}
+
+        &__img {
+            
+            min-width: 80%;
+        }
+
+        &__box-right {}
+
+        &__list {}
+
+        &__list-title {}
+
+        &__list-text {}
+    }
+
+    .container {}
+
+}

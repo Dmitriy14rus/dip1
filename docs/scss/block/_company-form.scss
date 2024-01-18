@@ -1,0 +1,323 @@
+.company-form {
+	background-color: $white;
+	margin-top: 120px;
+	margin-bottom: 120px;
+
+	&__heading {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 70px;
+		padding-bottom: 74px;
+	}
+
+	&__heading::before {
+		content: "";
+		background-image: url(/img/Group-221.svg);
+		position: absolute;
+		width: 199px;
+		height: 183px;
+		top: 119px;
+		left: -155px;
+
+	}
+
+	&__title {
+		width: 700px;
+		color: $dark;
+		text-align: center;
+		font-size: 36px;
+		@extend %bold;
+		line-height: 120%;
+		padding-bottom: 30px;
+	}
+
+	&__text {
+		text-align: center;
+		width: 544px;
+		font-size: 18px;
+		line-height: 160%;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: center;
+		gap: 82px;
+		position: relative;
+	}
+
+	&__block::before {
+		content: "";
+		background-image: url(../img/group224.svg);
+		position: absolute;
+		width: 199px;
+		height: 183px;
+		top: -198px;
+		left: -120px;
+	}
+
+	&__input-block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__input-block input {
+		background-color: $white ;
+		position: relative;
+		left: 12px;
+		margin-bottom: 5px;
+	}
+
+	&__name {
+		padding-left: 10px;
+		padding-bottom: 4px;
+
+	}
+
+	&__phone-input,
+	&__name-input,
+	&__email-input {
+		width: 282px;
+		border-bottom: 2px solid rgba(32, 32, 32, 0.40);
+	}
+
+	// &__phone-input input::placeholder,
+	// &__name-input input::placeholder,
+	// &__email-input input::placeholder {
+	// 	color: #202020;
+	// 	font-size: 14px;
+	// 	padding-bottom: 10px;
+	// }
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		margin-top: 60px;
+		padding-bottom: 80px;
+	}
+
+	&__button:hover {
+		background: $dark;
+		transition: all .2s ease-in-out;
+	}
+
+	&__button {
+		width: 240px;
+		height: 50px;
+		background: $orange-btn;
+		color: $white;
+		border-radius: 2px;
+	}
+
+	&__confendicality {
+		color: rgba(32, 32, 32, 0.40);
+		width: 206px;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	&__confendicality a:hover {
+		color: $dark;
+
+	}
+
+	&__confendicality a {
+		color: rgba(32, 32, 32, 0.40);
+		font-size: 13px;
+		text-decoration: underline;
+		transition: all .2s ease-in-out;
+	}
+}
+
+
+@media (max-width: 1440px) {
+	.company-form {
+
+		&__heading {}
+
+		&__title {
+			font-size: 32px;
+		}
+
+		&__text {
+			font-size: 16px;
+		}
+
+		&__block {
+			gap: 40px;
+		}
+
+		&__input-block {}
+
+		&__name {}
+
+		&__name-input {}
+
+		&__phone-input {}
+
+		&__email-input {}
+
+		&__btn {}
+
+		&__button {}
+
+		&__confendicality {}
+	}
+
+
+}
+
+@media (max-width: 992px) {
+	.company-form {
+
+		&__heading {}
+
+		&__title {}
+
+		&__text {}
+
+		&__block {
+
+			flex-wrap: wrap;
+		}
+
+		&__input-block {}
+
+		&__name {}
+
+		&__name-input {}
+
+		&__phone-input {}
+
+		&__email-input {}
+
+		&__btn {}
+
+		&__button {}
+
+		&__confendicality {}
+	}
+
+	.container {}
+
+}
+
+@media (max-width: 768px) {
+	.company-form {
+
+		&__heading {}
+
+		&__title {
+			width: auto;
+		}
+
+		&__text {}
+
+		&__block {}
+
+		&__block::before {
+			display: none;
+		}
+
+		&__input-block {}
+
+		&__name {}
+
+		&__name-input ::placeholder{
+			color: #ca0c0c;
+			opacity: 1;
+		}
+
+		&__phone-input {}
+
+		&__email-input {}
+
+		&__btn {
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+
+		}
+
+		&__button {}
+
+		&__confendicality {
+			width: 263px;
+		}
+	}
+
+	.container {}
+
+}
+
+@media (max-width: 576px) {
+	.company-form {
+
+		&__heading {}
+
+		&__title {
+			font-size: 23px;
+		}
+
+		&__text {
+			font-size: 14px;
+			width: 255px;
+		}
+
+		&__block {}
+
+		&__input-block {}
+
+		&__name {}
+
+		&__name-input {}
+
+		&__phone-input {}
+
+		&__email-input {}
+
+		&__btn {}
+
+		&__button {}
+
+		&__confendicality {}
+	}
+
+	.container {}
+
+}
+
+@media (max-width: 400px) {
+	.company-form {
+
+		&__heading {}
+
+		&__title {}
+
+		&__text {}
+
+		&__block {}
+
+		&__input-block {}
+
+		&__name {}
+
+		&__name-input {}
+
+		&__phone-input {}
+
+		&__email-input {}
+
+		&__btn {}
+
+		&__button {}
+
+		&__confendicality {}
+	}
+
+	.container {}
+
+}

@@ -1,0 +1,995 @@
+.company-header {
+    position: relative;
+
+    background: $white;
+
+}
+
+.company-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: $orange-bg;
+    z-index: 0;
+}
+
+
+
+.company-header {
+
+
+    &__top {
+        padding-top: 25px;
+        padding-bottom: 81px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+
+    &__mask {
+        position: absolute;
+        background-color: $orange-bg;
+        width: 386px;
+        height: 100%;
+
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        z-index: 1;
+
+    }
+
+    &__img {
+        height: 50px;
+    }
+
+    &__text {
+        width: 129px;
+        line-height: 1.40;
+        @extend %semibold;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 74px;
+        // padding-left: 140px;
+
+    }
+
+    &__info {
+        position: relative;
+    }
+
+    &__phone {
+        @extend %semibold;
+        font-size: 18px;
+    }
+
+    &__button {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: -1;
+        right: 0;
+        background: $orange-btn;
+        width: 170px;
+        height: 40px;
+        border-radius: 2px;
+        color: $white;
+    }
+
+    &__button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+    &__home {
+        position: relative;
+        display: flex;
+        right: 127px;
+        gap: 104px;
+        padding-bottom: 159px;
+    }
+
+    &__left-box {
+        position: relative;
+
+    }
+
+    &__detailed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        // text-align: center;
+        left: 413px;
+        width: 446px;
+        height: 220px;
+        background: $dark;
+        gap: 26px;
+    }
+
+    &__detailed-title {
+        height: 64px;
+        color: $white;
+        font-size: 23px;
+        line-height: 140%;
+        padding-left: 68px;
+        padding-right: 66px;
+
+
+        &-text {
+            @extend %semibold;
+            color: $white;
+            font-size: 23px;
+        }
+    }
+
+    &__btn {
+        padding-right: 118px;
+    }
+
+    &__detailed-btn {
+        width: 191px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+
+    &__detailed-btn:hover {
+        background: $orange-btn;
+        transition: all .2s ease-in-out;
+    }
+
+
+}
+
+.company-header__right-box {
+    position: relative;
+    top: 55px;
+}
+
+.right-box {
+
+    &__text {
+        color: $orange-bg;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+
+    }
+
+    &__text1 {
+        font-size: 12px;
+        color: $orange-btn;
+        @extend %bold;
+        letter-spacing: 0.6px;
+    }
+
+    &__text2 {
+        font-size: 12px;
+        color: $orange-btn;
+        @extend %bold;
+        letter-spacing: 0.6px;
+    }
+
+    &__title {
+        width: 384px;
+        height: 162px;
+        font-size: 45px;
+        @extend %bold;
+        letter-spacing: .02em;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+
+    &__strip {
+        position: relative;
+        right: 287px;
+        width: 517px;
+        height: 3px;
+        background: $orange-bg;
+        margin-bottom: 35px;
+    }
+
+    &__info {
+        width: 315px;
+        line-height: 160%;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        width: 209px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: $orange-btn;
+        color: $white;
+    }
+
+    &__btn:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    &__items-1 {
+        margin-right: 37px;
+
+    }
+
+    &__items-2 {
+        margin-right: 37px;
+    }
+
+    &__items-3 {
+        margin-right: 35px;
+    }
+
+    &__items-4 {
+        margin-right: 33px;
+    }
+
+    &__items-1 a {
+        position: relative;
+        transition: all .2s ease-in-out;
+
+    }
+
+    &__items-2 a {
+        position: relative;
+        transition: all .2s ease-in-out;
+    }
+
+    &__items-3 a {
+        position: relative;
+        transition: all .2s ease-in-out;
+    }
+
+    &__items-4 a {
+        position: relative;
+        transition: all .2s ease-in-out;
+    }
+
+    &__items-5 a {
+        position: relative;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.nav {
+    &__items-1 a::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: transparent;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-2 a::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: transparent;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-3 a::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: transparent;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-4 a::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: transparent;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-5 a::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: transparent;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-1 a:hover {
+        transition: all .2s ease-in-out;
+        text-shadow: 0 0 .65px #ff9646, 0 0 .65px #ff9646;
+        color: #ff9646
+    }
+
+    &__items-2 a:hover {
+        transition: all .2s ease-in-out;
+        text-shadow: 0 0 .65px #ff9646, 0 0 .65px #ff9646;
+        color: #ff9646
+    }
+
+    &__items-3 a:hover {
+        transition: all .2s ease-in-out;
+        text-shadow: 0 0 .65px #ff9646, 0 0 .65px #ff9646;
+        color: #ff9646
+    }
+
+    &__items-4 a:hover {
+        transition: all .2s ease-in-out;
+        text-shadow: 0 0 .65px #ff9646, 0 0 .65px #ff9646;
+        color: #ff9646
+    }
+
+    &__items-5 a:hover {
+        transition: all .2s ease-in-out;
+        text-shadow: 0 0 .65px #ff9646, 0 0 .65px #ff9646;
+        color: #ff9646
+    }
+
+    &__items-1 a:hover::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: #ff9646;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-2 a:hover::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: #ff9646;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-3 a:hover::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: #ff9646;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-4 a:hover::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: #ff9646;
+        transition: all .2s ease-in-out
+    }
+
+    &__items-5 a:hover::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        height: 2px;
+        width: 30px;
+        background: #ff9646;
+        transition: all .2s ease-in-out
+    }
+}
+
+.burger-icon {
+    display: none;
+
+
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 600;
+}
+
+.burger-icon span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background: #27242B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all .4s;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background: #27242B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    transition: all .4s;
+}
+
+.burger-icon span::before {
+    top: -9px;
+    left: -0.9px;
+}
+
+.burger-icon span::after {
+    bottom: -9px;
+    left: -1px;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+// =============================================
+@media (max-width: 1440px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .company-header {
+        &__mask {
+            width: 350px;
+        }
+
+        &__phone {
+            font-size: 16px;
+        }
+
+        &__button {
+            font-size: 12px;
+            width: 154px;
+            height: 37px;
+            right: -2px;
+        }
+
+        &__nav {
+            gap: 18px;
+        }
+    }
+
+    .nav {
+        &__items-1 {
+            margin-right: 13px;
+
+        }
+
+        &__items-2 {
+            margin-right: 13px;
+        }
+
+        &__items-3 {
+            margin-right: 13px;
+        }
+
+        &__items-4 {
+            margin-right: 13px;
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+    }
+
+    .company-header {
+
+        &__home {
+            gap: 50px;
+            // right: 283px;
+        }
+
+        &__left-box {
+            margin-left: -34px;
+            width: 687px;
+        }
+
+        &__img1 {
+            height: 80%;
+        }
+
+        &__detailed {
+            width: 342px;
+            height: 183px;
+            left: 345px;
+        }
+
+        &__detailed-title {
+            font-size: 18px;
+            line-height: 120%;
+            padding-left: 50px;
+            padding-right: 24px;
+            padding-top: 23px;
+        }
+
+        &__detailed-title-text {
+            font-size: 18px;
+            line-height: 120%;
+
+        }
+
+        &__btn {
+            padding-right: 0px;
+            padding-bottom: 30px;
+        }
+
+        &__detailed-btn {}
+
+        &__right-box {}
+    }
+
+    .right-box {
+
+        &__text {}
+
+        &__text1 {}
+
+        &__text2 {}
+
+        &__title {
+            font-size: 38px;
+            width: 324px;
+            margin-bottom: 8px;
+        }
+
+        &__strip {
+            width: 400px;
+            right: 195px;
+        }
+
+        &__info {
+            font-size: 12px;
+            line-height: 140%;
+        }
+
+        &__btn {}
+    }
+
+
+
+
+}
+
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 729px;
+    }
+
+    .company-header::before {
+        height: 672px;
+    }
+
+    .company-header {
+        
+
+
+        &__mask {
+            width: 280px;
+            height: 672px;
+        }
+
+        &__top {
+            align-items: normal;
+        }
+
+        &__info {
+            padding-right: 78px;
+        }
+
+        &__phone {}
+
+        &__button {
+            left: 0
+        }
+    }
+
+
+    //бургер меню===========
+    .nav__list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        background: #fff;
+        height: 100%;
+        z-index: 500;
+        transition: all .5s ease;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0 0 20px;
+        gap: 42px;
+        font-size: 100px;
+    }
+
+    .nav__list a {
+        font-size: 19px;
+
+    }
+
+    .body--opened-menu .nav__list {
+        right: 0;
+        transition: all .5s ease;
+    }
+
+    .burger-icon {
+        display: block;
+        right: 0px;
+        position: fixed;
+
+    }
+
+    // ========================================
+
+    .company-header {
+
+        &__home {
+            gap: 17px;
+        }
+
+        &__left-box {
+            margin-left: -51px;
+            width: 616px;
+        }
+
+        &__img1 {
+            height: 70%;
+        }
+
+        &__detailed {
+            left: 259px;
+        }
+
+        &__detailed-title {}
+
+        &__detailed-title-text {}
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__right-box {}
+    }
+
+    .right-box {
+
+        &__text {}
+
+        &__text1 {}
+
+        &__text2 {}
+
+        &__title {}
+
+        &__strip {}
+
+        &__info {}
+
+        &__btn {}
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 557px;
+    }
+
+    .company-header::before {
+        height: 445px;
+    }
+
+    .company-header__mask {
+        height: 100%;
+    }
+
+    .company-header {
+
+        &__home {
+            flex-wrap: wrap;
+            right: 4px;
+            gap: 0px;
+        }
+
+        &__left-box {
+            padding-left: 50px;
+        }
+
+        &__img1 {}
+
+        &__detailed {
+            left: 151px;
+        }
+
+        &__detailed-title {}
+
+        &__detailed-title-text {}
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__right-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .right-box {
+
+        &__text {}
+
+        &__text1 {}
+
+        &__text2 {}
+
+        &__title {
+            width: 100%;
+            height: 107px;
+        }
+
+        &__strip {
+            display: none;
+        }
+
+        &__info {
+            width: 100%;
+        }
+
+        &__btn {}
+    }
+
+}
+
+@media (max-width: 576px) {
+    .company-header::before {
+        height: 100%;
+        width: 50px;
+    }
+
+    .burger-icon span {
+        top: 24px;
+    }
+
+    .company-header__mask {
+        width: 80px;
+        height: 100%;
+    }
+
+    .company-header__top {
+        padding-top: 3px;
+        padding-bottom: 27px;
+    }
+
+    .company-header__info {
+        display: none;
+    }
+
+    .company-header__img {
+        width: 50%;
+    }
+
+    .company-header__text {
+        display: none;
+    }
+
+    .company-header {
+
+        &__home {
+            gap: 32px;
+        }
+
+        &__left-box {
+
+            padding-left: none;
+
+        }
+
+        &__img1 {
+            width: 100%;
+            height: auto;
+        }
+
+        &__detailed {
+            bottom: -562px;
+            left: 100px;
+        }
+
+        &__detailed-title {}
+
+        &__detailed-title-text {}
+
+        &__btn {}
+
+        &__detailed-btn {}
+
+        &__right-box {
+            display: flex;
+
+            text-align: start;
+            align-items: start;
+            top: -7px;
+
+            left: 104px;
+        }
+    }
+
+    .right-box {
+
+        &__text {}
+
+        &__text1 {}
+
+        &__text2 {}
+
+        &__title {
+            font-size: 38px;
+            width: 324px;
+            margin-bottom: 8px;
+        }
+
+        &__strip {
+            display: block;
+            bottom: -25px;
+        }
+
+        &__info {
+            width: 315px;
+            line-height: 160%;
+            margin-bottom: 35px;
+        }
+
+        &__btn {}
+    }
+
+
+}
+
+@media (max-width: 420px) {
+    .nav__list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        z-index: 500;
+        transition: all .5s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 20px;
+        gap: 65px;
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .company-header {
+
+        &__right-box {}
+    }
+
+    .right-box {
+
+        &__text {
+            font-size: 10px;
+        }
+
+        &__text1 {
+            font-size: 10px;
+        }
+
+        &__text2 {
+            font-size: 10px;
+        }
+
+        &__title {
+            font-size: 32px;
+            width: 272px;
+        }
+
+        &__strip {}
+
+        &__info {
+            width: 70%;
+            height: auto;
+        }
+
+        &__btn {}
+    }
+
+    .company-header__detailed {
+        width: auto;
+        height: auto;
+        left: 67px;
+    }
+
+
+}

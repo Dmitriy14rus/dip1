@@ -1,0 +1,24 @@
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+    position: relative;
+    max-width: 1247px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+* {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: $dark;
+    font-style: normal;
+}
+

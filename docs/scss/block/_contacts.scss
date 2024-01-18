@@ -1,0 +1,470 @@
+.contacts {
+    background: #F4F4F4;
+    z-index: 0;
+    position: relative;
+
+    &__title {
+        font-size: 36px;
+        line-height: 120%;
+        @extend %bold;
+        margin-bottom: 44px;
+        position: relative;
+    }
+
+    &__title::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 18px;
+        background: $orange-btn;
+        z-index: -1;
+        top: 25px;
+        left: -40px;
+    }
+
+    &__boxMap {
+        margin-bottom: 75px;
+    }
+
+    &__map {}
+
+    &__box {
+        display: flex;
+    }
+
+    &__item {
+        border: 2px solid #F4F4F4;
+        display: flex;
+        width: 407px;
+        height: 180px;
+        padding: 63px 20px 63px 56px;
+        background: #FFF;
+
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__item-left {
+        position: relative;
+    }
+
+    &__item-left::before {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 80px;
+        background: #F9BB88;
+        z-index: 0;
+        top: -12px;
+        left: -8px;
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 0;
+    }
+
+
+    &__item-right {}
+
+    &__item-title {}
+
+    &__item-content {
+        @extend %semibold;
+        line-height: 160%;
+    }
+
+    &__item-content span {
+        @extend %semibold;
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: 0.9px;
+    }
+}
+
+.container {}
+
+.catalog {
+
+    &__mask3 {
+        position: absolute;
+        background-color: $orange-bg;
+        width: 386px;
+        height: 735px;
+        z-index: -1;
+    }
+
+    &__link {}
+}
+
+.company {
+
+    &__link-left {}
+
+    &__link-right {}
+}
+
+.contacts::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 56%;
+    background-color: #F9BB88;
+    z-index: -1;
+}
+
+.contacts::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 612px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44%;
+    background: #FFF;
+    z-index: -1;
+}
+
+
+@media (max-width: 1440px) {
+    .contacts {
+    
+        &__title {
+        }
+    
+        &__title::before {
+        }
+    
+        &__boxMap {
+        }
+    
+        &__map {
+            width: 100%;
+            height: 600px;
+        }
+    
+        &__box {
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+    
+        &__item {
+        }
+    
+        &__item-left {
+        }
+    
+        &__item-left::before {
+        }
+    
+        &__icon {
+        }
+    
+    
+        &__item-right {}
+    
+        &__item-title {}
+    
+        &__item-content {
+        }
+    
+        &__item-content span {
+        }
+    }
+    
+    .container {}
+    
+    .catalog {
+    
+        &__mask {}
+    
+        &__link {}
+    }
+    
+    .company {
+    
+        &__link-left {}
+    
+        &__link-right {}
+    }
+    
+    .contacts::before {
+    }
+    
+    .contacts::after {
+        height: 56%;
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+    
+        &__title {
+        }
+    
+        &__title::before {
+        }
+    
+        &__boxMap {
+        }
+    
+        &__map {
+        }
+    
+        &__box {
+        }
+    
+        &__item {
+        }
+    
+        &__item-left {
+        }
+    
+        &__item-left::before {
+        }
+    
+        &__icon {
+        }
+    
+    
+        &__item-right {}
+    
+        &__item-title {}
+    
+        &__item-content {
+        }
+    
+        &__item-content span {
+        }
+    }
+    
+    .container {}
+    
+    .catalog {
+    
+        &__mask3 {
+            width: 280px;
+        }
+    
+        &__link {}
+    }
+    
+    .company {
+    
+        &__link-left {}
+    
+        &__link-right {}
+    }
+    
+    .contacts::before {
+    }
+    
+    .contacts::after {
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+    
+        &__title {
+        }
+    
+        &__title::before {
+        }
+    
+        &__boxMap {
+        }
+    
+        &__map {}
+    
+        &__box {
+        }
+    
+        &__item {
+        }
+    
+        &__item-left {
+        }
+    
+        &__item-left::before {
+        }
+    
+        &__icon {
+        }
+    
+    
+        &__item-right {}
+    
+        &__item-title {}
+    
+        &__item-content {
+        }
+    
+        &__item-content span {
+        }
+    }
+    
+    .container {}
+    
+    .catalog {
+    
+        &__mask {}
+    
+        &__link {}
+    }
+    
+    .company {
+    
+        &__link-left {}
+    
+        &__link-right {}
+    }
+    
+    .contacts::before {
+    }
+    
+    .contacts::after {
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts {
+    
+        &__title {
+        }
+    
+        &__title::before {
+        }
+    
+        &__boxMap {
+        }
+    
+        &__map {}
+    
+        &__box {
+            
+        }
+    
+        &__item {
+            gap: 8px;
+        }
+    
+        &__item-left {
+        }
+    
+        &__item-left::before {
+        }
+    
+        &__icon {
+        }
+    
+    
+        &__item-right {}
+    
+        &__item-title {}
+    
+        &__item-content {
+        }
+    
+        &__item-content span {
+        }
+    }
+    
+    .container {}
+    
+    .catalog {
+    
+        &__mask3 {
+            width: 80px;
+        }
+    
+        &__link {}
+    }
+    
+    .company {
+    
+        &__link-left {}
+    
+        &__link-right {}
+    }
+    
+    .contacts::before {
+        width: 17%;
+    }
+    
+    .contacts::after {
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts {
+    
+        &__title {
+        }
+    
+        &__title::before {
+        }
+    
+        &__boxMap {
+        }
+    
+        &__map {
+            height: 380px;
+        }
+    
+        &__box {
+        }
+    
+        &__item {
+            padding: 63px 0px 63px 17px;
+        }
+    
+        &__item-left {
+        }
+    
+        &__item-left::before {
+        }
+    
+        &__icon {
+        }
+    
+    
+        &__item-right {}
+    
+        &__item-title {}
+    
+        &__item-content {
+        }
+    
+        &__item-content span {
+        }
+    }
+    
+    .container {}
+    
+    .catalog {
+    
+        &__mask {}
+    
+        &__link {}
+    }
+    
+    .company {
+    
+        &__link-left {}
+    
+        &__link-right {}
+    }
+    
+    .contacts::before {
+    }
+    
+    .contacts::after {
+    }
+}

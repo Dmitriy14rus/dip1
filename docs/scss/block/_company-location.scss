@@ -1,0 +1,365 @@
+.company-location {
+    margin-top: 110px;
+    margin-bottom: 110px;
+
+    &__box {
+        display: flex;
+        gap: 134px;
+    }
+
+    &__box-left {
+        margin-left: -130px;
+    }
+
+    &__box-right {}
+
+    &__box-title {
+        position: relative;
+        font-size: 36px;
+        line-height: 120%;
+        @extend %bold;
+        margin-bottom: 40px;
+    }
+
+    &__box-title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -39px;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+    }
+
+    &__box-text {
+        width: 386px;
+        line-height: 160%;
+    }
+
+    &__form {
+
+        margin-top: 40px;
+    }
+
+    &__form-block {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    &__form-block input {
+
+        position: relative;
+        left: 12px;
+        margin-bottom: 5px;
+    }
+
+    &__form-name {
+        padding-left: 10px;
+        padding-bottom: 4px;
+    }
+
+    &__form-name-input {
+        width: 490px;
+        border-bottom: 2px solid rgba(32, 32, 32, 0.40);
+    }
+
+    &__form-phone-input {
+        width: 490px;
+        border-bottom: 2px solid rgba(32, 32, 32, 0.40);
+    }
+
+    &__form-email-input {
+        width: 490px;
+        border-bottom: 2px solid rgba(32, 32, 32, 0.40);
+    }
+
+    &__btn {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+        text-align: center;
+        justify-content: start;
+    }
+
+    &__button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+    &__button {
+        width: 277px;
+        height: 50px;
+        background: $orange-btn;
+        color: $white;
+        border-radius: 2px;
+    }
+
+    &__confendicality {
+
+        margin-left: 13px;
+        color: rgba(32, 32, 32, 0.40);
+        width: 253px;
+        height: 31px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    &__confendicality a:hover {
+        color: $dark;
+    }
+
+    &__confendicality a {
+        color: rgba(32, 32, 32, 0.40);
+        font-size: 13px;
+        text-decoration: underline;
+        transition: all .2s ease-in-out;
+    }
+
+
+}
+
+
+@media (max-width: 1440px) {
+    .company-location {
+
+        &__box {
+            gap: 18px;
+        }
+
+        &__box-left {
+            margin-left: -11px;
+            width: 100%;
+            height: auto;
+        }
+
+        &__img {
+            
+        }
+
+        &__box-right {
+            width: 405px;
+        }
+
+        &__box-title {
+            font-size: 32px;
+        }
+
+        &__box-text {
+            font-size: 12px;
+        }
+
+        &__form {}
+
+        &__form-block {}
+
+        &__form-name {}
+
+        &__form-name-input {
+            width: 285px;
+        }
+
+        &__form-phone-input {
+            width: 285px;
+        }
+
+        &__form-email-input {
+            width: 285px;
+        }
+
+        &__btn {}
+
+        &__button {}
+
+        &__confendicality {}
+    }
+
+    .location__img {
+        width: 100%;
+    }
+
+    .container {}
+
+}
+
+@media (max-width: 992px) {
+
+    iframe {
+        width: 600px;
+    }
+
+    .company-location {
+
+        &__box {}
+
+        &__box-left iframe {
+            width: 398px;
+            height: 100%;
+        }
+
+        &__map {}
+
+        &__box-right {}
+
+        &__box-title {}
+
+        &__box-text {}
+
+        &__form {}
+
+        &__form-block {}
+
+        &__form-name {}
+
+        &__form-name-input {}
+
+        &__form-phone-input {}
+
+        &__form-email-input {}
+
+        &__btn {}
+
+        &__button {}
+
+        &__confendicality {}
+    }
+
+    .container {}
+
+}
+
+@media (max-width: 768px) {
+    .company-location {
+
+        &__box {
+            flex-direction: column;
+        }
+
+        &__box-left {
+            margin-left: -11px;
+            width: 100%;
+            height: auto;
+        }
+
+        &__img {
+            
+        }
+
+        
+
+        &__box-right {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__box-title {}
+
+        &__box-text {
+            width: 100%;
+        }
+
+        &__form {}
+
+        &__form-block {}
+
+        &__form-name {}
+
+        &__form-name-input {}
+
+        &__form-phone-input {}
+
+        &__form-email-input {}
+
+        &__btn {}
+
+        &__button {}
+
+        &__confendicality {}
+    }
+
+    .container {}
+
+}
+
+@media (max-width: 576px) {
+    .company-location {
+
+        &__box {}
+
+        &__box-left {
+            display: none;
+
+        }
+
+        &__box-left iframe {}
+
+        &__box-right {}
+
+        &__box-title {}
+
+        &__box-text {}
+
+        &__form {}
+
+        &__form-block {}
+
+        &__form-name {}
+
+        &__form-name-input {}
+
+        &__form-phone-input {}
+
+        &__form-email-input {}
+
+        &__btn {}
+
+        &__button {}
+
+        &__confendicality {}
+    }
+
+    .container {}
+
+}
+
+@media (max-width: 400px) {
+    .company-location {
+
+        &__box {}
+
+        &__box-left {}
+
+        &__box-right {}
+
+        &__box-title {}
+
+        &__box-text {}
+
+        &__form {}
+
+        &__form-block {}
+
+        &__form-name {}
+
+        &__form-name-input {}
+
+        &__form-phone-input {}
+
+        &__form-email-input {}
+
+        &__btn {}
+
+        &__button {}
+
+        &__confendicality {}
+    }
+
+    .container {}
+
+}

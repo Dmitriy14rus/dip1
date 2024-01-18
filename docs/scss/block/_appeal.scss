@@ -1,0 +1,357 @@
+.appeal {
+    position: relative;
+    margin-bottom: 127px;
+
+    &__title {
+        position: relative;
+        width: 344px;
+        font-size: 36px;
+        @extend %bold;
+        line-height: 120%;
+        margin-bottom: 40px;
+
+    }
+
+    &__title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -39px;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+    }
+
+
+
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    &__box::before {
+        content: "";
+        position: absolute;
+        background-image: url(../img/element.svg);
+        width: 96px;
+        height: 96px;
+        top: -173px;
+        right: -50px;
+    }
+
+    &__list {
+        width: 386px;
+    }
+
+    &__list1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__list-title {
+        width: 300px;
+        font-size: 23px;
+        @extend %semibold;
+        line-height: 160%;
+        margin-bottom: 30px;
+    }
+
+    &__list-title1 {
+        width: 277px;
+        font-size: 23px;
+        @extend %semibold;
+        line-height: 160%;
+        margin-bottom: -15px;
+    }
+
+    &__text {
+        line-height: 160%;
+        width: 378px;
+
+    }
+
+    &__list-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    &__icon-icon {
+        position: relative;
+    }
+
+    &__icon-icon::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: -6px;
+        width: 21px;
+        height: 80px;
+        background: $orange-bg;
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon-text {
+        @extend %semibold;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    &__img {
+        position: relative;
+        top: 18px;
+    }
+
+
+}
+
+@media (max-width: 1440px) {
+    .appeal {
+
+		&__title {
+            font-size: 32px;
+		}
+
+		&__box {
+            gap: 20px;
+		}
+
+		&__list {
+		}
+
+		&__list-title {
+            font-size: 18px;
+		}
+
+		&__text {
+            font-size: 12px;
+            width: auto;
+		}
+
+		&__list1 {
+		}
+
+		&__list-title1 {
+            font-size: 18px;
+		}
+
+		&__list-box {
+		}
+
+		&__icon-icon {
+		}
+
+		&__icon {
+		}
+
+		&__icon-text {
+            font-size: 16px;
+		}
+
+		&__img {
+            width: 100%;
+		}
+}
+.container {
+}
+
+}
+
+@media (max-width: 992px) {
+    .appeal {
+
+		&__title {
+		}
+
+		&__box {
+            gap: 100px;
+		}
+
+		&__list {
+		}
+
+		&__list-title {
+		}
+
+		&__text {
+		}
+
+		&__list1 {
+		}
+
+		&__list-title1 {
+		}
+
+		&__list-box {
+            gap: 5px;
+		}
+
+		&__icon-icon {
+		}
+
+		&__icon {
+		}
+
+		&__icon-text {
+		}
+
+		&__img {
+            display: none;
+		}
+}
+.container {
+}
+
+}
+
+@media (max-width: 768px) {
+    .appeal {
+
+		&__title {
+		}
+
+		&__box {
+            gap: 17px;
+		}
+
+		&__list {
+		}
+
+		&__list-title {
+		}
+
+		&__text {
+		}
+
+		&__list1 {
+		}
+
+		&__list-title1 {
+		}
+
+		&__list-box {
+		}
+
+		&__icon-icon {
+		}
+
+		&__icon {
+		}
+
+		&__icon-text {
+		}
+
+		&__img {
+		}
+}
+.container {
+}
+
+}
+
+@media (max-width: 576px) {
+    .appeal {
+
+		&__title {
+            
+		}
+
+		&__box {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+		}
+
+		&__list {
+            width: auto;
+		}
+
+		&__list-title {
+            
+		}
+
+		&__text {
+		}
+
+		&__list1 {
+            gap: 40px;
+		}
+
+		&__list-title1 {
+		}
+
+		&__list-box {
+		}
+
+		&__icon-icon {
+		}
+
+		&__icon {
+		}
+
+		&__icon-text {
+		}
+
+		&__img {
+            display: block;
+		}
+}
+.container {
+}
+
+}
+
+@media (max-width: 400px) {
+    .appeal {
+
+		&__title {
+		}
+
+		&__box {
+            align-items: start;
+		}
+
+		&__list {
+		}
+
+		&__list-title {
+		}
+
+		&__text {
+		}
+
+		&__list1 {
+		}
+
+		&__list-title1 {
+            width: 216px;
+		}
+
+		&__list-box {
+		}
+
+		&__icon-icon {
+		}
+
+		&__icon {
+		}
+
+		&__icon-text {
+		}
+
+		&__img {
+		}
+}
+.container {
+}
+
+}

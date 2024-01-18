@@ -1,0 +1,269 @@
+.advantages {
+    background-color: $white2;
+    margin-top: 157px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 125px;
+        height: auto;
+    }
+
+
+    &__list {
+        position: relative;
+        display: flex;
+        border: 2px solid #f4f4f4;
+
+    }
+
+    &__list:first-child::before {
+        content: "";
+        background-image: url(../img/element.svg);
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        bottom: -50px;
+        left: -150px;
+    }
+
+    &__list:last-child::before {
+        content: "";
+        background-image: url(../img/element.svg);
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        top: -50px;
+        right: -150px;
+    }
+
+
+
+    &__list-icon {
+        position: relative;
+        margin-left: 42px;
+        margin-top: 57px;
+    }
+
+    &__list-icon::before {
+        content: "";
+        position: absolute;
+        top: -11px;
+        left: -7px;
+        width: 21px;
+        height: 80px;
+        background: $orange-bg;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__box-right {
+        padding: 40px 40px 40px 30px;
+    }
+
+    &__title {
+        font-size: 18px;
+        @extend %semibold;
+        line-height: 140%;
+        padding-right: 17px;
+        padding-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 170%;
+    }
+}
+
+// ==============================================
+
+@media (max-width: 1440px) {
+    .advantages {
+
+        &__inner {}
+
+        &__list {
+            width: 90%;
+        }
+
+        &__list-icon {}
+
+        &__img {}
+
+        &__box-right {
+            padding: 12px 10px 35px 20px;
+        }
+
+        &__title {}
+
+        &__text {}
+    }
+
+}
+
+@media (max-width: 992px) {
+    .advantages {
+        margin-top: 27px;
+        margin-bottom: 40px;
+
+        &__inner {
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 160px;
+        }
+
+        &__list {}
+
+        &__list:first-child::before {
+            bottom: 150px;
+            left: 530px;
+        }
+
+        &__list:last-child::before {
+            top: 152px;
+            right: 531px;
+        }
+
+        &__list-icon {
+            margin-top: 29px;
+        }
+
+        &__img {}
+
+        &__box-right {}
+
+        &__title {}
+
+        &__text {}
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages {
+
+
+        &__inner {
+
+            margin-bottom: 169px;
+        }
+
+        &__list {}
+
+        &__list:first-child::before {
+            left: 375px;
+        }
+
+        &__list:last-child::before {
+            top: 170px;
+            right: 375px;
+        }
+
+        &__list-icon {
+            margin-top: 29px
+        }
+
+        &__img {}
+
+        &__box-right {}
+
+        &__title {}
+
+        &__text {}
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+    .advantages {
+        margin-top: 98px;
+        z-index: 10;
+
+        &__inner {
+            gap: 0;
+            margin-bottom: 155px;
+
+        }
+
+        &__list {
+            width: 100%;
+            height: 100%;
+            padding-top: 26px;
+
+
+        }
+
+        &__list:first-child::before {
+            bottom: 144px;
+            left: 403px;
+            z-index: -1;
+        }
+
+        &__list:last-child::before {
+            top: 144px;
+            right: 403px;
+            z-index: -1;
+        }
+
+        &__list-icon {
+            margin-top: 29px
+        }
+
+        &__img {}
+
+        &__box-right {}
+
+        &__title {}
+
+        &__text {}
+    }
+}
+
+@media (max-width: 400px) {
+    .advantages {
+        margin-top: 100px;
+        z-index: 10;
+
+        &__inner {
+            gap: 0;
+            margin-bottom: 155px;
+
+        }
+
+        &__list {
+            width: 100%;
+            height: 100%;
+            padding-top: 26px;
+
+
+        }
+
+        &__list:first-child::before {
+            bottom: 219px;
+            left: 283px;
+            z-index: -1;
+        }
+
+        &__list:last-child::before {
+            top: 219px;
+            right: 283px;
+            z-index: -1;
+        }
+
+        &__list-icon {
+            margin-top: 29px
+        }
+
+        &__img {}
+
+        &__box-right {}
+
+        &__title {}
+
+        &__text {}
+    }
+}
